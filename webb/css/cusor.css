@@ -1,0 +1,24 @@
+body {
+  cursor: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  transition: transform 0.1s ease-out;
+  transform: translate(-50%, -50%);
+  background-image: url('../pic/hand.png');
+  background-size: cover;
+}
+
+/**/
+/*.custom-cursor{*/
+/*    cursor: url('../pic/LOGO.png'), auto;*/
+/*}*/

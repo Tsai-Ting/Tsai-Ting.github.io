@@ -1,0 +1,38 @@
+body {
+  transform-origin: top left;
+  transition: transform 0.3s ease-in-out;
+}
+/* Default font size */
+body {
+  font-size: 16px;
+}
+.change-menu {
+  position: relative;
+  z-index: 999;
+}
+
+@media screen and (max-width: 1024px) {
+    table {
+        width: 80%;
+    }
+    #word {
+        font-size: 15px;
+    }
+    img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    table {
+        width: 100%;
+    }
+    #word {
+        font-size: 13px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

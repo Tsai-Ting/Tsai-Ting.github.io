@@ -1,0 +1,20 @@
+#word {
+	font-size: 18px;
+	color: black;
+	text-indent: 2em;
+	font-family: "Times New Roman", Times, serif;
+	line-height: 150%;
+}
+#title{
+	font-size: 25px;
+	color:#A00000;
+	font-family: "Times New Roman", Times, serif;
+	line-height: 100%;
+}
+#content{
+	font-size: 18px;
+	color:#300000;
+	text-indent: 2em;
+	font-family: "Times New Roman", Times, serif;
+	line-height: 150%;
+}

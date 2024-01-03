@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>挑戰者技能</title>
+    <style type="text/css">
+        @import url("./css/block.css");
+        @import url("./css/link.css");
+        @import url("./css/image.css");
+        @import url("./css/table.css");
+        @import url("./css/breakpoint2.css");
+        @import url("./css/cusor.css");
+        @import url("./css/cusor2.css");
+    </style>
+    <script src="./js/mouse.js"></script>
+</head>
+
+<body background="bg4.jpg">
+    <div class="custom-cursor"></div>
+    <canvas id="starCanvas"></canvas>
+    <div class="change-menu"><center><img src="pic/LOGO.png" width="421" height="236" align="middle" /></center>
+    <center><table width="800" border="0" cellspacing="" cellpadding="0">
+        <tr>
+            <td><a href="index.html">遊戲簡介</a></td>
+            <td><a href="story.html">故事起源</a></td>
+            <td><a href="hero.html">英雄介紹</a></td>
+            <td><a href="skill.html">挑戰者技能</a></td>
+            <td><a href="intro.html">遊戲引導</a></td>
+        </tr>
+    </table></center></div>
+   <center><hr size="8px" align="center" width="100%">
+     <div class="change-device"><table width="1200" border="0" cellspacing="10" cellpadding="0">
+       <tr>
+         <td> <div class="container">
+                <img src="pic/skill/skill1.png" class="image">
+                   <div class="overlay">
+                     <div class="text">制裁</div>
+                   </div>
+         </div></td>
+         <td> <div class="container">
+                <img src="pic/skill/skill2.png" class="image">
+                   <div class="overlay">
+                     <div class="text">斬殺</div>
+                   </div>
+         </div></td>
+         <td> <div class="container">
+                <img src="pic/skill/skill3.png" class="image">
+                   <div class="overlay">
+                     <div class="text">狂熱</div>
+                   </div>
+         </div></td>
+         <td> <div class="container">
+                <img src="pic/skill/skill4.png" class="image">
+                   <div class="overlay">
+                     <div class="text">疾走</div>
+                   </div>
+         </div></td>
+         <td> <div class="container">
+                <img src="pic/skill/skill5.png" class="image">
+                   <div class="overlay">
+                     <div class="text">治癒</div>
+                   </div>
+         </div></td>
+       </tr>
+       <tr>
+         <td> <div class="container">
+                <img src="pic/skill/skill6.png" class="image">
+                   <div class="overlay">
+                     <div class="text">封鎖</div>
+                   </div>
+         </div></td>
+         <td> <div class="container">
+                <img src="pic/skill/skill7.png" class="image">
+                   <div class="overlay">
+                     <div class="text">暈眩</div>
+                   </div>
+         </div></td>
+         <td> <div class="container">
+                <img src="pic/skill/skill8.png" class="image">
+                   <div class="overlay">
+                     <div class="text">清醒</div>
+                   </div>
+         </div></td>
+         <td> <div class="container">
+                <img src="pic/skill/skill9.png" class="image">
+                   <div class="overlay">
+                     <div class="text">瞬移</div>
+                   </div>
+         </div></td>
+         <td> <div class="container">
+                <img src="pic/skill/skill10.png" class="image">
+                   <div class="overlay">
+                     <div class="text">寒冰制裁</div>
+                   </div>
+         </div></td>
+       </tr>
+     </table></div>
+     <p>&nbsp;</p>
+   </center>
+   <center><table id="customers" >
+   <tr>
+     <th>技能</th>
+     <th>CD時間</th>
+     <th>功能描述</th>
+   </tr>
+   <tr>
+   <td>制裁</td>
+   <td>30秒CD</td>
+   <td>對野怪或小兵造成真實傷害並眩暈1秒</td>
+   </tr>
+   <tr class="alt">
+   <td>斬殺</td>
+   <td>90秒CD</td>
+   <td>立即對身邊敵軍英雄造成其已損失生命值16%的真實傷害</td>
+   </tr>
+   <tr>
+   <td>狂熱</td>
+   <td>60秒CD</td>
+   <td>增加攻擊速度60%，增加物理攻擊力10%持續5秒</td>
+   </tr>
+   <tr class="alt">
+   <td>疾走</td>
+   <td>100秒CD</td>
+   <td>解除減速效果，並獲得不斷衰減的70%（最低降至30%）跑速加成效果，持續10秒</td>
+   </tr>
+   <tr>
+   <td>治愈</td>
+   <td>120秒CD</td>
+   <td>恢復自己與附近隊友15%生命，提高附近友軍移動速度15%持續2秒</td>
+   </tr>
+   <tr class="alt">
+   <td>封鎖</td>
+   <td>60秒CD</td>
+   <td>沉默建築持續5秒</td>
+   </tr>
+   <tr>
+   <td>暈眩</td>
+   <td>90秒CD</td>
+   <td>暈眩身邊所有敵人0.5秒，減少身邊敵人40%輸出，持續2秒</td>
+   </tr>
+   <tr class="alt">
+   <td>清醒</td>
+   <td>120秒CD</td>
+   <td>解除自體所有負面和控制效果並免疫控制持續1.5秒</td>
+   </tr>
+   <tr>
+   <td>瞬移</td>
+   <td>120秒CD</td>
+   <td>向指定方向位移一段距離</td>
+   </tr>
+   <tr class="alt">
+   <td>寒冰制裁</td>
+   <td>30秒CD</td>
+   <td>對野怪或小兵造成真實傷害並眩暈1秒，或對英雄造成真實傷害，並減速50%持續2秒</td>
+   </tr>
+   </table></center>
+</body>
+</html>

@@ -1,0 +1,49 @@
+
+body {
+  transform-origin: top left;
+  transition: transform 0.3s ease-in-out;
+}
+/* Default font size */
+body {
+  font-size: 16px;
+}
+.change-menu {
+  position: relative;
+  z-index: 999;
+}
+
+
+/* Media queries - breakpoints for adjusting font size */
+/* Small devices (phones) */
+@media screen and (max-width: 576px) {
+  .change-device {
+    transform: scale(0.5);
+  }
+  .change-menu {
+    transform: scale(0.7);
+  }
+  .change-device-word {
+    font-size: 14px;
+  }
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Medium devices (tablets) */
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+  .change-device {
+    transform: scale(0.8);
+  }
+  .change-menu {
+    transform: scale(0.9);
+  }
+  .change-device-word {
+    font-size: 12px;
+  }
+  body {
+    font-size: 12px;
+  }
+}
+
+

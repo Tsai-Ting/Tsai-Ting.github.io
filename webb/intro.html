@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>遊戲引導</title>
+    <style type="text/css">
+        @import url("./css/block.css");
+        @import url("./css/link.css");
+        @import url("./css/menu.css");
+        @import url("./css/cusor.css");
+        @import url("./css/cusor2.css");
+        @import url("./css/breakpoint2.css");
+        /*@import url("button.css");*/
+    </style>
+    <script src="./js/mouse.js"></script>
+</head>
+
+<body background="bg4.jpg">
+    <div class="custom-cursor"></div>
+    <canvas id="starCanvas"></canvas>
+    <div class="change-menu"><center><img src="pic/LOGO.png" width="421" height="236" align="middle" /></center>
+    <center><table width="800" border="0" cellspacing="" cellpadding="0">
+        <tr>
+            <td><a href="index.html">遊戲簡介</a></td>
+            <td><a href="story.html">故事起源</a></td>
+            <td><a href="hero.html">英雄介紹</a></td>
+            <td><a href="skill.html">挑戰者技能</a></td>
+            <td><a href="intro.html">遊戲引導</a></td>
+        </tr>
+    </table></center></div>
+   <div class="dropdown">
+     <button class="dropbtn">選擇基本技能/戰場設定</button>
+     <div class="dropdown-content">
+       <a href="intro.html">基本技能</a>
+       <a href="intro_battlefield.html">戰場設置</a>
+     </div>
+   </div>
+    <div class="change-device">
+   <center><table width="70%" border="0" cellspacing="0" cellpadding="0">
+     <tr><td>
+<p id="title">物理攻擊：</p>
+<p id="content">每個英雄的基礎值各有不同，升級提升的幅度也不同，射手與刺客通常會比較高，決定一個英雄的普通攻擊和物理性技能的傷害，物理攻擊對物理 傷害技能會根據係數有不同的影響，因此同樣買高物理攻擊技能傷害還是有高下之分、另外有些魔法傷害也會受到這個數值的影響，例如：卡莉、凡恩、莫托斯、凱 格路士...等，其他還有部分護盾、回血、真實傷害會隨著物理傷害提升，例如：馬洛斯、龍馬、瑟菲斯...等。 </p>
+<p id="title">魔法攻擊：</p>
+<p id="content">各英雄基礎值都是0，並不會隨著等級提升，通常決定一個英雄的魔法技能傷害，與物理攻擊類似，魔法攻擊對魔法傷害技能會根據技能係數有不同 的影響，另外也會對部分普攻或技能的回血、護盾、真實傷害有影響。 </p>
+<p id="title">物理防禦：</p>
+<p id="content">每個英雄的基礎值各有不同，升級提升的幅度也不同，數值越高在遭受物理傷害時能減免越多的傷害，物理防禦會受到穿透、減益 ，而受到影響，物理防禦的減免傷害計算公式是傷害減免%=(最終防禦力/最終防禦力+600)%。 </p>
+<p id="title">魔法防禦：</p>
+<p id="content">英雄的基礎值都是50，滿級169，數值越高在遭受到魔法傷害時能減免越多的傷害，魔法防禦也會受到穿透、減益的影響，魔法 防禦的減免傷害計算公式與物理防禦相同，亦可套用上面公式。 </p>
+<p id="title">物理穿透：</p>
+<p id="content">左邊為固定穿透值，右邊為百分比穿透值，能減少敵人作用在自己攻擊上的物理防禦。 </p>
+<p id="title">魔法穿透：</p>
+<p id="content">左邊為固定穿透值，右邊為百分比穿透值，能減少敵人作用在自己攻擊上的魔法防禦。 </p>
+<p id="title">物理吸血：</p>
+<p id="content">只有奧義提供的吸血值不會受到長生護符與拘魂效果的影響，普攻包括普攻暴擊造成的物理傷害會吸血，技能與道具所造成的物理傷害通常不 會吸血，只有少數例外，例如：莫拉的大招、超人的一技、大招，物理吸血的上限值是100%，超過上限值的部分可以作用在拘魂效果上，計算的效果 是在最終傷害上，因此會受到敵人的減傷影響。 </p>
+<p id="title">魔法吸血：</p>
+<p id="content">只有奧義提供的吸血值不會受到長生護符與拘魂效果的影響，計算的效果是在最終傷害上，因此會受到敵人的減傷影響，魔法吸血的所提供的 吸血量與物理吸血不同，多數技能還得乘以一個較低的比值，因此會讓玩家感覺到吸血量遠不如預期。 </p>
+<p id="title">最大人生：</p>
+<p id="content">每個英雄能擁有的最大生命值，基礎值各有不同，會隨著等級提升，通常坦克與鬥士會有較高的數值，當購買最大生命值裝備時現有 生命會跟著最大生命與現有生命的比例提升。 </p>
+<p id="title">最大魔力：</p>
+<p id="content">每個英雄能擁有的最大魔法值，基礎值各有不同，會隨著等級提升，施放技能不消耗魔力的角色沒有這個數值，此外一些怒氣、能量之類的消耗 則是有另外的系統，當購買最大魔法值裝備時現有魔力會跟著最大魔力與現有魔力的比例提升。 </p>
+     </td>
+   </tr>
+   </table></center></div>
+</body>
+</html>
